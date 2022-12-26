@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Odin Sign-Up Form</title>
+  </head>
+  <body>
+    <div class="feature">
+      <div class="logo">
+        <img src="images/odin-lined.png" alt="Odin Logo" />
+        <h1>Odin</h1>
+      </div>
+      <p>
+        Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on
+        <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p>
+    </div>
+    <div class="main">
+      <p>
+        This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams.<br />Sign up
+        <span class="italic">now</span> to get started.<br /><br />
+        You <span class="italic">Know</span> you want to.
+      </p>
+      <form action="#">
+        <fieldset>
+          <legend>Let's Do This!</legend>
+          <label for="fname">First Name</label>
+          <label for="lname">Last Name</label>
+          <input name="fname" id="fname" type="text" />
+          <input name="lname" id="lname" type="text" />
+          <label for="email">Email</label>
+          <label for="phone">Phone Number</label>
+          <input name="email" id="email" type="email" />
+          <input name="phone" id="phone" type="tel" />
+          <label for="pword">Password</label>
+          <label for="pword2">Confirm Password</label>
+          <input name="pword" id="pword" type="password" />
+          <input name="pword2" id="pword2" type="password" />
+        </fieldset>
+        <button name="submit" id="submit" type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </form>
+    </div>
+  </body>
+</html>
