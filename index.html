@@ -28,21 +28,40 @@
         <span class="italic">now</span> to get started.<br /><br />
         You <span class="italic">Know</span> you want to.
       </p>
-      <form action="#">
+      <form action="#" name="form" id="form" onsubmit="return validateForm()" method="post">
         <fieldset>
           <legend>Let's Do This!</legend>
-          <label for="fname">First Name</label>
-          <label for="lname">Last Name</label>
-          <input name="fname" id="fname" type="text" />
-          <input name="lname" id="lname" type="text" />
-          <label for="email">Email</label>
-          <label for="phone">Phone Number</label>
-          <input name="email" id="email" type="email" />
-          <input name="phone" id="phone" type="tel" />
-          <label for="pword">Password</label>
-          <label for="pword2">Confirm Password</label>
-          <input name="pword" id="pword" type="password" />
-          <input name="pword2" id="pword2" type="password" />
+
+          <div class="form-section">
+            <label for="fname">First Name</label>
+            <input name="fname" id="fname" type="text" />
+            <span class="errmsg hidden">First name must be at least 3 characters</span>
+          </div>
+          <div class="form-section">
+            <label for="lname">Last Name</label>
+            <input name="lname" id="lname" type="text" />
+            <span class="errmsg hidden">Last name must be at least 3 characters</span>
+          </div>
+          <div class="form-section">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" />
+            <span class="errmsg hidden">Please enter a valid email</span>
+          </div>
+          <div class="form-section">
+            <label for="phone">Phone Number</label>
+            <input name="phone" id="phone" type="tel" />
+            <span class="errmsg hidden">Please enter a valid phone number</span>
+          </div>
+          <div class="form-section">
+            <label for="pword">Password</label>
+            <input name="pword" id="pword" type="password" />
+            <span class="errmsg hidden">Password must be at least 8 characters</span>
+          </div>
+          <div class="form-section">
+            <label for="pword2">Confirm Password</label>
+            <input name="pword2" id="pword2" type="password" />
+            <span class="errmsg hidden">Passwords do not match</span>
+          </div>
         </fieldset>
         <button name="submit" id="submit" type="submit">Create Account</button>
         <p>Already have an account? <a href="#">Log in</a></p>
